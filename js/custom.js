@@ -36,7 +36,7 @@ $(document).ready(function () {
                             "<div class='col s12 m12 l6'>" +
                             "<div class='card teal white-text'>" +
                             "<div class='card-header teal darken-3'>" +
-                            "<span class='card-title'>" + type + "</span>" +
+                            "<span class='card-title'>" + o.title + "</span>" +
                             "</div>" +
                             "<div class='card-content'>" +
                             o.snippet +
@@ -52,29 +52,33 @@ $(document).ready(function () {
                 if (type === 'rune') {
                     $("#panels").empty();
                     let counter = 0;
-                    $("#panels").append(
-                        "<div class='col s12 m8 offset-m2 l6 offset-l3'>" +
-                        "<div class='card teal white-text'>" +
-                        "<div class='card-header teal darken-3'>" +
-                        "<span class='card-title'> " + type + "</span>" +
-                        "</div>" +
-                        "<div class='card-content'>" +
-                        response.item.name +
-                        "<ul class='collapsible'>" +
-                        "<li>" +
-                        "<div class='collapsible-header black-text'>Moneys</div>" +
-                        "<div class='collapsible-body'>stuff</div>" +
-                        "</li>" +
-                        "<li>" +
-                        "<div class='collapsible-header black-text'>Moneys</div>" +
-                        "<div class='collapsible-body'>stuff</div>" +
-                        "</li>"+
-                        "</ul>" +
-                        "</div>" +
-                        "</div>" +
-                        "</div>"
-                    );
+                    for(let o of response) {
+                        if (isEven(counter)) {
+                            $('#panels').append("<div class='row'>");
+                        }
+                        $("#panels").append("" +
+                            "<div class='col s12 m12 l6'>" +
+                            "<ul class='collapsible'>" +
+                            "<li>" +
+                            "<div class='collapsible-header'>" +o.name +
+                            "</div>" +
+                            "<div class='collapsible-body'>" +
+                            "<ul class='collection'>" +
+                            "<li class='collection-item'>low alch: "+o.lowalch+"</li>" +
+                            "<li class='collection-item'>high alch: "+o.highalch+"</li>" +
+                            "<li class='collection-item'>GE Price: "+o.cost+"</li>" +
+                            "</ul>" +
+                            "</div>" +
 
+                            "</li>"+
+                            "</ul>" +
+                            "</div>");
+                        if (!isEven(counter)) {
+                            $('#panels').append("</div>");
+                        }
+                        counter++;
+                    }
+                    $('.collapsible').collapsible();
                 }
             }
         });
@@ -97,7 +101,6 @@ function isEven(value) {
     else
         return false;
 }
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems, options);
+$(document).ready(function(){
+    $('.collapsible').collapsible();
 });

@@ -1,5 +1,6 @@
 <html>
 <head>
+<title>JavaScript Browser</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -7,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="grey lighten-2">
-
 <div class="container">
 
     <div class="row">
@@ -15,6 +15,7 @@
             <a class="click-to-toggle btn-floating btn-large red mainbutton" id="wiki">
                 <i class="mdi mdi-wikipedia"></i>
             </a>
+
             <ul>
                 <li><a class="btn-floating red"><i class="mdi mdi-wikipedia" id="wiki"></i></a></li>
                 <li><a class="btn-floating red"><i class="mdi mdi-chart-areaspline" id="rune"></i></a></li>
