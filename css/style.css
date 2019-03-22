@@ -1,0 +1,8 @@
+.card-header {
+    padding: 2% 2% 2% 2%;
+}
+.image{
+    max-width: 80%;
+    max-height: 80%;
+    vertical-align: center;
+}
