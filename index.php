@@ -7,9 +7,19 @@
     <link rel="stylesheet" type="text/css" href="node_modules/@mdi/font/css/materialdesignicons.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body class="grey lighten-2">
+<body class="grey lighten-4">
+<nav>
+    <div class="nav-wrapper">
+        <ul id="nav" class="right">
+            <li>
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Informatie over deze app</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 <div class="container">
-    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Informatie over deze app</a>
+
+
 
     <!-- Modal Structure -->
     <div id="modal1" class="modal">
@@ -43,6 +53,7 @@
                 <label for="searchFor"></label>
             </div>
         </form>
+
     </div>
     <div class="row" id="panels">
     </div>
