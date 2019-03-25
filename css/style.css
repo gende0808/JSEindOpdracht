@@ -6,3 +6,9 @@
     max-height: 80%;
     vertical-align: center;
 }
+.underlined{
+    text-decoration: underline;
+}
+.thick{
+    font-weight: bold;
+}

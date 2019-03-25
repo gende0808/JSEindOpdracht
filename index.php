@@ -9,7 +9,20 @@
 </head>
 <body class="grey lighten-2">
 <div class="container">
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Informatie over deze app</a>
 
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Over deze app</h4>
+            <p>Dit is een voorbeeld voor de JavaScript Browser.</p>
+            <p>De selectieknop in de rechteronderhoek geeft je de keuze tussen twee manieren van zoeken.</p>
+            <p class="underlined thick">Optie 1: Wikipedia</p>
+            <p>Bij het gebruik van deze optie wordt bij het invoeren van een zoekterm gezocht naar resultaten via de Wikipedia API</p>
+            <p class="underlined thick">Optie 2: Runescape</p>
+            <p>Bij het gebruik van deze optie wordt in een mysql database gezocht naar items die overeenkomen met het ingevoerde woord</p>
+        </div>
+    </div>
     <div class="row">
         <div class="fixed-action-btn">
             <a class="click-to-toggle btn-floating btn-large red mainbutton" id="wiki">
@@ -18,9 +31,7 @@
 
             <ul>
                 <li><a class="btn-floating red"><i class="mdi mdi-wikipedia" id="wiki"></i></a></li>
-                <li><a class="btn-floating red"><i class="mdi mdi-chart-areaspline" id="rune"></i></a></li>
-                <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-                <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                <li><a class="btn-floating red"><i class="mdi mdi-currency-brl" id="rune"></i></a></li>
             </ul>
         </div>
         <form id="search" class="col s12 m12 l12">
