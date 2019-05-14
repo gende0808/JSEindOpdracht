@@ -7,6 +7,9 @@
     <link rel="stylesheet" type="text/css" href="node_modules/@mdi/font/css/materialdesignicons.css">
     <link rel="shortcut icon" href="img/jslogo.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.js"></script>
+    <script src="js/custom.js"></script>
 </head>
 <body class="grey lighten-4">
 <nav>
@@ -61,9 +64,6 @@
     </div>
 </div>
 </body>
-<script src="jquery/jquery-3.3.1.min.js"></script>
-<script src="materialize/js/materialize.js"></script>
-<script src="js/custom.js"></script>
 </html>
 
 
