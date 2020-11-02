@@ -1,11 +1,5 @@
 <?php
 
-
-//$DB_host = "db.ictacademie.net";
-//$DB_user = "c8jsuser";
-//$DB_pass = "vtjr2TKR6F#";
-//$DB_name = "c8jsexample";
-
 $DB_host = "localhost";
 $DB_user = "root";
 $DB_pass = "password";
